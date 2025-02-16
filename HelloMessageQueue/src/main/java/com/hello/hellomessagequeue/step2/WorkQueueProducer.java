@@ -14,7 +14,7 @@ public class WorkQueueProducer {
 
     public void sendWorkQueue(String message, int duration) {
         String workMessage = message + "| " + duration;
-        rabbitTemplate.convertAndSend(RabbitMQConfigStep2.QUEUE_NAME, workMessage);
+        rabbitTemplate.convertAndSend(RabbitMQConfig.QUEUE_NAME, workMessage);
         System.out.println("# Sent workqueue : " + workMessage);
     }
 }
