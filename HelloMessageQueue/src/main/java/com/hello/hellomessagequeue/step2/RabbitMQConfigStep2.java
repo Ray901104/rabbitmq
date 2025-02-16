@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class RabbitMQConfig {
+public class RabbitMQConfigStep2 {
 
     // 큐 네임 설정
     public static final String QUEUE_NAME = "work-queue";
