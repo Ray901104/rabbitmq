@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitMQConfig {
 
     // 큐 네임 설정
-    public static final String QUEUE_NAME = "helloqueue";
+    public static final String QUEUE_NAME = "hello-queue";
 
     // 큐
     @Bean
