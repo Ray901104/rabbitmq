@@ -20,4 +20,9 @@ public class LogConsumer {
     public void consumeInfo(String message) {
         System.out.println("[INFO] : " + message);
     }
+
+    @RabbitListener(queues = RabbitMQConfig.ALL_LOG_QUEUE)
+    public void consumeAllLog(String message) {
+        System.out.println("[ALL LOG] : " + message);
+    }
 }
