@@ -55,7 +55,7 @@ public class RabbitMQConfig {
         // Exchange 에 메시지가 도달했는지 여부 확인
         rabbitTemplate.setConfirmCallback((correlationData, ack, cause) -> {
             if (ack) {
-                System.out.println("[Message Confirmed] " + correlationData != null ? correlationData.getId() : "null");
+                System.out.println("[Message Confirmed] " + (correlationData != null ? correlationData.getId() : "null"));
             } else {
                 System.out.println("[Message not Confirmed] " + (correlationData != null ? correlationData.getId() : "null") + ", reason : " + cause);
 
