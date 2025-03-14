@@ -15,6 +15,7 @@ spring:
           max-attempts: 3
           max-interval: 1000
         default-requeue-rejected: false # 재시도 실패 시 자동으로 DLQ 이동
+    publisher-confirm-type: correlated # Enable Publisher Confirms 추가
   application:
     name: HelloMessageQueue
   datasource:
